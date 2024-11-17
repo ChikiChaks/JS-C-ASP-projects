@@ -1,0 +1,385 @@
+body {
+  font-family: 'Assistant';
+}
+
+header {
+  max-height: 52px;
+  ;
+}
+
+.containerBig {
+  width: 100%;
+  padding: 0;
+}
+
+video,
+canvas {
+  max-width: 100%;
+}
+
+
+
+/* Mobile navigation styles */
+.mobile-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ececec;
+  padding: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 30vw;
+  background-color: #ececec;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+  z-index: 1001;
+  transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  padding-right: 1rem;
+  max-width: 150px;
+  ;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 0.8rem;
+}
+
+.nav-links.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-links li {
+  margin: 25px 0;
+  text-align: right;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 4vw;
+}
+
+#navIcon {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+#nav-logo {
+  width: 85%;
+}
+/* Mobile navigation styles */
+
+
+
+.filterContainer {
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#sportInput {
+  display: block;
+  width: 15vw;
+  height: 5vh; 
+  border-radius: 0.4rem;
+  min-width: 150px;
+}
+
+.btnGroup {
+  display: flex;
+  width: 50%;
+  gap: 5%;
+  margin-top: 5%;
+  
+}
+
+.filter-btn{
+  width: 15vw;
+  height: 5vh;
+  min-width: 80px;
+  font-size: 80%;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.2);
+  /* font-size: 65%; */
+  line-height: 1;
+}
+.filter-btn:focus{
+  box-shadow: none;
+  background-color: rgba(0, 0, 0);
+  color: aliceblue;
+}
+
+
+
+
+
+.opacityBg1 {
+  width: 25%;
+  z-index: -1;
+  position: absolute;
+  top: 60rem;
+  left: 85%;
+}
+
+.opacityBg2 {
+  width: 25%;
+  z-index: -1;
+  position: absolute;
+  top: 22rem;
+  right: 65%;
+}
+
+.searchText,
+.filterText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+
+
+.searchText:last-child,
+.filterText:last-child {
+  margin-right: 0;
+  /* Remove margin from the last element */
+}
+
+
+
+.flex-container-sports img {
+  border-radius: 1rem;
+  box-shadow: rgba(33, 33, 33, 0.5) 5px 5px 5px;}
+
+#itemsContainer li h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+#itemsContainer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.flex-container-sports img {
+  width: 100%;
+}
+
+.flex-container-sports li {
+  list-style: none;
+  padding-left: 3%;
+  padding-right: 3%;
+  gap: 2rem;
+  margin: 25px;
+  padding-top: 1%;
+  width: 35%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  /* box-shadow: rgba(216, 216, 216, 0.5) 3px 3px 3px; */
+  flex-direction: column;
+  padding-bottom: 2rem;
+  transition: transform 0.3s ease;
+  /* backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc; */
+}
+
+.flex-container-sports li:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------popUp------------ */
+#myModal .modal {
+  max-height: 80vh;
+  margin-top: 10vh;
+}
+
+.modal-body{
+  padding: 5%;
+  padding-top: 1%;
+}
+#modalImage {
+  width: 15%;
+  margin: 0 auto;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: auto;
+  border-radius: 5px;
+  min-width: 45px;
+  margin-bottom: 2%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#modalTitle{
+  display: inline-block;
+font-size: 200%;
+}
+
+ /* ---------popUp------------ */
+
+
+
+ .bg {
+  width: 100%;
+  /* margin-top: 175px; */
+  margin-top:6rem;
+  
+}
+
+
+
+
+/* Styles for larger screens (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+
+  /* ----nav---- */
+  .nav-links {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    width: auto;
+    opacity: 1;
+    gap: 3rem;
+    visibility: visible;
+    max-width: 1200px;
+    box-shadow: none;
+    padding-right: 0;
+  }
+
+  .nav-links img {
+    display: none;
+  }
+
+  .nav-links li {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  .nav-links li:hover {
+    background-color: rgb(30, 25, 81, 0.3);
+    border-radius: 3px;;
+    
+    
+  }
+
+  .nav-links a {
+    font-size: 2vw;
+  }
+
+
+  #navIcon {
+    display: none;
+  }
+  /* ----nav---- */
+
+
+
+ /* ----ppopup---- */
+  #myModal .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #myModal .modal-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    width: 100%;
+  }
+
+  #myModal .btn-close {
+    margin-right: auto;
+  }
+
+  /* ----ppopup---- */
+
+
+  .btnGroup {
+    margin-right: 1rem;
+    margin-top: 0;
+
+  }
+  .filter-btn{
+    font-size: 100%;
+    width: 15vw;
+    height: 7vh;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+  }
+  .filter-btn:focus{
+    box-shadow: none;
+    background-color: rgba(0, 0, 0);
+    color: aliceblue;
+  }
+  
+  #sportInput {
+    display: inline-block;
+    height: 7vh;
+  }
+  
+  .filterContainer {
+    flex-direction: row;
+  }
+
+
+  .flex-container-sports li {
+    width: 15%;
+    height: 15%;
+  }
+  
+  .opacityBg1 {
+    width: 25%;
+    z-index: -1;
+    position: absolute;
+    top: 50rem;
+    left: 85%;
+  }
+  
+  .opacityBg2 {
+    width: 25%;
+    z-index: -1;
+    position: absolute;
+    top: 22rem;
+    right: 65%;
+  }
+  
+}

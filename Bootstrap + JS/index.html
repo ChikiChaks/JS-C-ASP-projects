@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>תכנות 3 - JavaScript</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- bootstrap -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div class="containerBig">
+    <header id="mobileNav" class="mobile-nav">
+
+      <!-- Hamburger Icon and Navigation Links -->
+      <div id="navIcon" class="nav-icon" onclick="toggleNav()">&#9776;</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">מבוא</a></li>
+        <li><a href="#">סוגי ספורט</a></li>
+        <li><a href="#">אודות</a></li>
+        <li><a href="#">צור קשר</a></li>
+        <img id="nav-logo" src="img/logo.png">
+      </ul>
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </div>
+
+    </header>
+  </div>
+
+  <!-- banner -->
+  <img class="bg" src="img/Asset 9.png" alt="background image">
+
+  <!-- Search and Filter Section -->
+  <div id="block">
+
+    <div class="filterContainer">
+      <input type="text" placeholder="חיפוש..." id="sportInput" oninput="searchItems()">
+      <div class="btnGroup">
+        <button type="button" class="filter-btn btn btn-outline-dark" onclick="filterSport('single sport')">ספורט
+          יחידני</button>
+        <button type="button" class="filter-btn btn btn-outline-dark" onclick="filterSport('team sport')">ספורט
+          קבוצתי</button>
+        <button type="button" class="filter-btn btn btn-outline-dark" onclick="filterSport('All')">הכל</button>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- פה יוצגו המערכות -->
+  <div class="allcards">
+    <div id="itemsContainer" class="flex-container-sports">
+
+    </div>
+  </div>
+
+
+
+
+ <!-- background -->
+  <img class="opacityBg1" src="img/ballBG.png" alt="background image">
+  <img class="opacityBg2" src="img/ballBG.png" alt="background image">
+
+
+
+
+
+
+
+<!-- פופאפ -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg"> <!-- Use modal-lg for large, modal-sm for small -->
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Sport Image" class="img-fluid">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <p id="modalContent"></p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">חזור</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
