@@ -1,0 +1,83 @@
+﻿@page "/HW1"
+@using Programmin2_classroom.Shared.Models.Courses;
+@using Programmin2_classroom.Shared.Models.Tasks;
+@inject HttpClient Http
+
+@if (displayList != null)
+{
+	<ul>
+		@foreach (CourseInfo course in displayList)
+		{
+			<li>
+				@("Course name: " + course.CourseName + " ID is: " +
+					course.ID.ToString() + " Amount of tasks is: " + course.TaskNum.ToString())
+				<input type="button" value="full info" @onclick="@(()=>getIdForInfo(@course.ID))" />
+			</li>
+		}
+	</ul>
+}
+
+@if (chosenCourse != null)
+{
+	<p> Course Name <input type="text" @bind=@chosenCourse.CourseName /> </p>
+	<p> Department Name <input type="text" @bind=@chosenCourse.Department /> </p>
+	<p>Credits <input type="number" @bind=@chosenCourse.Credits /></p>
+	<p> Year <input type="number" @bind=@chosenCourse.Year /> </p>
+	@if (chosenCourse.Tasks != null)
+	{
+		@foreach (TaskToAdd task in chosenCourse.Tasks)
+		{
+			<ol>
+				<li>
+					<p> Task Name <input type="text" @bind=task.TaskName /> </p>
+					<p> Weight <input type="number" @bind=task.Weight /> </p>
+					<p> Page Num <input type="number" @bind=task.TotalPages /> </p>
+					<p> Belongs to <input type="number" @bind=task.CourseID /> </p>
+				</li>
+			</ol>
+		}
+		<input type="button" value="update task" @onclick=updateAll />
+	}
+}
+
+
+
+@code {
+	 
+	List<CourseInfo> displayList;
+	CourseToAdd chosenCourse;
+	int idtest = 0;
+	protected override async Task OnInitializedAsync() {
+		var response = await Http.GetAsync("api/CourseDetails");
+		if (response.IsSuccessStatusCode == true)
+		{
+			displayList =
+			response.Content.ReadFromJsonAsync<List<CourseInfo>>().Result;
+		}
+	}
+	public async Task getIdForInfo(int id)
+	{
+		var outcome = await Http.GetAsync("api/CourseDetails/Course/" + id);
+		if (outcome.IsSuccessStatusCode == true)
+		{
+			chosenCourse = outcome.Content.ReadFromJsonAsync<CourseToAdd>().Result;
+			idtest = id;
+		}
+	}
+	public async Task updateAll()
+	{
+		var approval = await Http.PostAsJsonAsync("api/CourseDetails/update/" + idtest, chosenCourse);
+		if (approval.IsSuccessStatusCode == true)
+		{
+			foreach (CourseInfo course in displayList)
+			{
+				Console.WriteLine("here");
+				if (course.ID == idIndicator)
+				{
+					course.CourseName = chosenCourse.CourseName;
+				}
+			}
+			chosenCourse = new CourseToAdd();
+		}
+	}
+}

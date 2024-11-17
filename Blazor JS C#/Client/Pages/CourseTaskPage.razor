@@ -1,0 +1,63 @@
+﻿@page "/CourseTaskPage"
+@using Programmin2_classroom.Shared.Models.Courses;
+@using Programmin2_classroom.Shared.Models.Tasks;
+@inject HttpClient Http
+
+<h3>Courses List</h3>
+@if (CourseList != null) {
+	<table>
+		<tr>
+			<th>Course and Department</th>
+			<th>Number Of Tasks </th>
+		</tr>
+		@foreach (CourseCountTask c in CourseList) {
+			<tr>
+				<td>@(c.CourseAndDepartment)</td>
+				<td>@(c.CourseCountAllTasks.ToString())</td>
+			</tr>
+		}
+	</table>
+}
+
+<hr />
+<p>
+	Enter course id:<input type="number" @bind=CourseID />
+	<input type="button" value="Find Tasks" @onclick="findTasks" />
+</p>
+@if (course != null && course.Tasks != null)
+{
+	<p> Course ID:@course.ID  Course Name:@course.CourseName  Department:@course.Department</p>
+	<ul>
+		@foreach (TaskNameWeight Task in course.Tasks)
+		{
+			<li>@(Task.TaskName + " : " + Task.Weight.ToString())</li>
+		}
+	</ul>
+}
+
+
+@code {
+	List<CourseCountTask> CourseList;
+
+	protected override async Task OnInitializedAsync()
+	{
+		var coursesResponse = await Http.GetAsync("api/CourseTasks");
+		if (coursesResponse.IsSuccessStatusCode == true)
+		{
+			CourseList = coursesResponse.Content.ReadFromJsonAsync<List<CourseCountTask>>().Result;
+		}
+	}
+
+	CourseAndTasks course;
+	int CourseID = 0;
+
+	async Task findTasks()
+	{
+		var courseResponse = await Http.GetAsync("api/CourseTasks/Tasks/" + CourseID);
+		if (courseResponse.IsSuccessStatusCode == true)
+		{
+			course = courseResponse.Content.ReadFromJsonAsync<CourseAndTasks>().Result;
+		}
+	}
+
+}

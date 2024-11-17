@@ -1,0 +1,72 @@
+﻿@page "/CourseInterface"
+@using Programmin2_classroom.Shared.Models.Courses;
+@using Programmin2_classroom.Shared.Models.Tasks;
+@inject HttpClient Http
+
+<h1> Courses Interface: </h1>
+<p>Course Name:<input type="text" @bind=newCourse.CourseName />  </p>
+<br />
+<p>Department: <input type="text" @bind=newCourse.Department />  </p>
+<br />
+<p>Credits:<input type="number" @bind=newCourse.Credits />  </p>
+<br />
+<p>Year:<input type="number" @bind=newCourse.Year />  </p>
+<br />
+<input type="button" value="Create Course" @onclick="createCourse" />
+<br />
+<br />
+
+@if (isVisible == true) 
+{
+	<h3>Add task to course @newCourse.CourseName:</h3>
+    <p>Task Name:<input type="text" @bind=newTask.TaskName />  </p>
+    <br />
+    <p>Weight:<input type="number" @bind=newTask.Weight />  </p>
+    <br />
+    <p>Number of pages:<input type="number" @bind=newTask.TotalPages />  </p>
+    <br />
+    <p>Group size:<input type="number" @bind=newTask.GroupSize />  </p>
+    <br />
+    <input type="button" value="Add Task" @onclick="addTaskToCourse" />
+
+    @if (newCourse.Tasks.Count >0) {
+        <ul>
+        @foreach(TaskToAdd t in newCourse.Tasks) {
+            <li>Task: @t.TaskName Weight: @t.Weight</li>
+        }
+        </ul>
+        <br />
+        <input type="button" value="Insert Course" @onclick="InsertCourse" />
+    }
+}
+
+
+@code {
+	CourseToAdd newCourse = new CourseToAdd();
+	TaskToAdd newTask = new TaskToAdd();
+	bool isVisible = false;
+
+    private void createCourse()
+    {
+        isVisible = true;
+        newCourse.Tasks = new List<TaskToAdd>();
+    }
+
+    private void addTaskToCourse()
+    {
+        newCourse.Tasks.Add(newTask);
+        newTask = new TaskToAdd();
+    }
+
+    async Task InsertCourse() 
+    {
+        var insertResponse = await Http.PostAsJsonAsync("api/CourseTasks/add", newCourse);
+        if (insertResponse.IsSuccessStatusCode == true)
+        {
+            newCourse = new CourseToAdd();
+            isVisible = false;
+        }
+
+    }
+   
+}

@@ -1,0 +1,46 @@
+﻿<h3>StudentDetails</h3>
+
+
+<span>Name: @StudentName</span><br />
+<span>Phone: @StudentPhone</span><br />
+<span>Year: @Alert</span><br />
+<span>Address: @StudentAddress</span><br />
+
+<span>Student Description:</span>
+<div>
+	@ChildContent
+</div>
+
+@code {
+	[Parameter]
+	public string StudentName{ get; set; }
+
+	[Parameter]
+	public string StudentPhone { get; set; }
+
+	[Parameter]
+	public double StudentAge { get; set; }
+
+	[Parameter]
+	public string StudentAddress { get; set; }
+
+	[Parameter]
+	public RenderFragment ChildContent { get; set; }
+
+
+	protected override void OnInitialized()
+	{
+		CheckAge();
+	}
+
+	string Alert = "";
+
+	void CheckAge() {
+		if (StudentAge > 30) {
+			Alert = "the age is more than 30";
+		}
+		else {
+			Alert = "the age is less than 30";
+		}
+	}
+}

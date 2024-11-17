@@ -1,0 +1,63 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Programmin2_classroom.Client
+build_property.RootNamespace = Programmin2_classroom.Client
+build_property.ProjectDir = C:\Users\user\Downloads\Programmin2_OfekBackouche-main\Programmin2_OfekBackouche-main\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Downloads\Programmin2_OfekBackouche-main\Programmin2_OfekBackouche-main\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Components/StudentDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdHVkZW50RGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Pages/CourseTaskPage - Copy.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlVGFza1BhZ2UgLSBDb3B5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Pages/CourseTaskPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlVGFza1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Pages/HW1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSFcxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Pages/StudentList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ci014wbzaq
+
+[C:/Users/user/Downloads/Programmin2_OfekBackouche-main/Programmin2_OfekBackouche-main/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3b2l9hbgm7
