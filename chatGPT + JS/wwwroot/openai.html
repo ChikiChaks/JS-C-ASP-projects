@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>תכנות 3 - שיעור API</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+    <div id="container">
+        <label for="subject">Choose your subject:</label>
+        <input id="promptSubject" placeholder="Write your subject" />
+
+        <br />
+        <label for="charecter">Choose your charecter:</label>
+        <input id="promptcharecter" placeholder="Write your charecter" />
+        <br />
+
+        <label for="levels">Choose your level:</label>
+        <select name="levels" id="promptLevel">
+            <option value="High school">High school</option>
+            <option value="Academy">Academy</option>
+            <option value="Kinder garden">Kinder garden</option>
+        </select>
+        <br />
+
+        <label for="language">Choose your language:</label>
+        <select name="language" id="promptLanguage">
+            <option value="Hebrew">Hebrew</option>
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+        </select>
+
+        <br />
+
+    </div> 
+    <button onclick="getQuestion()">Generate Question</button>
+    <ul id="questions">
+    </ul>
+</body>
+</html>
