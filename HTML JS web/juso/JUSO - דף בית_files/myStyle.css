@@ -1,0 +1,452 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Varela+Round&display=swap');
+body {
+    direction: rtl;
+    margin: auto;
+    width: 1280px;
+}
+
+.ulnav {
+    position:fixed;
+    list-style: none;
+    display: inline-block;
+    z-index:100;
+    background-color:white;
+    width:100%;
+}
+.li1:hover {
+    background-color: #E7E6E4;
+}
+
+.li1:active {
+    background-color: bisque;
+}
+
+.li1 ul {
+    display: none;
+    position: absolute;
+}
+    .li1 ul li {
+        position:relative;
+        left: 45px;
+        top:17px;
+        font-family: 'Varela Round', sans-serif;
+        width: 160px;
+        height: 40px;
+        background-color: #E7E6E4;
+        text-align: center;
+    }
+        .li1 li:hover {
+            background-color: bisque;
+        }
+
+.li1:hover ul {
+    display: block;
+    width: 500px;
+    height: 40px;
+}
+.li1 {
+    float: right;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    padding: 5px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.liPT {
+    padding-top: 17px;
+    height: 28px;
+}
+
+p, h2 {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+.mainPage {
+    position: relative;
+    top: 50px;
+    right: 280px;
+    width:750px;
+}
+
+.logo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30pt;
+}
+.imgHomePage {
+    position:relative;
+    top:50px;
+    width:1280px;
+    height:540px;
+}
+.button1 {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    right: 325px;
+    top: 30px;
+    transition-duration: 0.4s;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+    .button1:hover {
+        border-color: black;
+        background-color: white;
+        color: black;
+    }
+
+.Shakes {
+    position: relative;
+    top: 78px;
+    width: 1000px;
+    height: 600px;
+    right: 270px;
+}
+.imgShake {
+    padding:40px;
+    position:relative;
+    left:75px;
+    top: 50px;
+    display:inline;
+    width:100px;
+    height:245px;
+}
+.button2 {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    right: 335px;
+    top: 70px;
+    transition-duration: 0.4s;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+    .button2:hover {
+        border-color: black;
+        background-color: white;
+        color: black;
+    }
+
+    .BulletIcon img {
+        display:inline-block;
+        position:relative;
+        right:75px;
+        padding:40px;
+        width:300px;
+        height:300px;
+    }
+
+    .BoxPhoto6 {
+        position:relative;
+        width:1280px;
+        height:800px;
+    }
+
+.FooterTable {
+    z-index:100;
+    position:absolute;
+    background-color: #E7E6E4;
+    width:1280px;
+    height:250px;
+}
+.FooterTable th {
+    z-index:200;
+font-family: 'Varela Round', sans-serif;
+padding-top:50px;
+font-size: 15pt;
+}
+    .FooterTable td {
+        z-index:200;
+        font-family: 'Varela Round', sans-serif;
+        padding-bottom:6px;
+        color:dimgray;
+        position:relative;
+        top:10px;
+        right:100px;
+    }
+.HeaderPhotos3 {   
+    width: 1280px;
+}
+.HeaderPhotos3 img {
+    width: 1280px;
+    height: 440px;
+}
+h1 {
+    font-size: 90px;
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    color: white;
+    top: 200px;
+    left: 350px;
+}
+.FormPage {
+    font-family: 'Varela Round', sans-serif;
+    font-size:20px;
+    position: relative;
+    display:block;
+    padding-top:19px;
+}
+.map {
+    position:absolute;
+    right:700px;
+    top:500px;
+    height:500px;
+    width:700px;
+}
+.SendButton {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    right:190px;
+    top:10px;
+    z-index:100;
+    transition-duration: 0.4s;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+    .SendButton:hover {
+        border-color: black;
+        background-color: white;
+        color: black;
+    }
+
+.AboutUs {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin-right:300px;
+    text-align:center;
+    width: 700px;
+   
+}
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size:30px;
+    margin: 20px;
+}
+.profilePics img {
+    position:relative;
+    right:330px;
+    padding:10px;
+    height:300px;
+    width:300px;
+    display:inline-block;
+}
+.ShakesPage img {
+    width: 200px;
+    height: 500px;
+    padding:25px;
+}
+.InfoHerf a{
+    font-family: 'Varela Round', sans-serif;
+    text-decoration:none;
+    text-align:center;
+    color:black;
+    font-size:30px;
+}
+.InfoHerf td {
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+    text-align:center;
+    color: black;
+    font-size: 18px;
+    width:280px;
+   position:relative;
+   bottom:30px;
+}
+.ShakeInfo {
+    width:1280px;
+    height:700px;
+}
+.info_greenShake {
+    margin-top:200px;
+    margin-right:100px;
+    border-bottom:solid black;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    font-weight:600;
+}
+.info_greenShake div {
+    margin-right: 200px;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+.info_ingredients {
+    margin-top:50px;
+    margin-right: 120px;
+    display:block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.borderML {
+    margin-top:50px;
+    margin-right:95px;
+    border-top: solid black;
+    width: 500px;
+}
+
+.info_amount {
+    margin-top:60px;
+    margin-right: 120px;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.button3 {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size:16pt;
+    left:280px;
+    top: 70px;
+    transition-duration: 0.4s;
+    background-color: black;
+    width: 500px;
+    height: 40px;
+    color: white;
+}
+
+    .button3:hover {
+        border-color: black;
+        background-color: white;
+        color: black;
+    }
+
+.greenShake img {
+    display:inline-block;
+    margin-right:800px;
+    position:relative;
+    bottom:400px;
+    width: 15%;
+    height: 15%;
+}
+#greenbarSection {
+    width:1280px;
+    height:300px;
+}
+    #greenbarSection img {
+    z-index:10;
+     width:1280px;
+     position:absolute;
+     height:300px;
+     padding-bottom:100px;
+    }
+    #greenbarH {
+        position:absolute;
+        z-index:100;
+        right:600px;
+        padding-top:20px;
+    }
+#greenbarSection h3 {
+    z-index: 100;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    top: 100px;
+    padding-right: 100px;
+    padding-left: 300px;
+    font-size: 20pt;
+    display: inline-block;
+}
+
+
+#greenRight li {
+    position: relative;
+    z-index: 50;
+    top: 130px;
+    padding-right: 60px;
+    padding-bottom: 4px;
+    font-family: 'Varela Round', sans-serif;
+    list-style-type: none;
+    font-size: 15pt;
+}
+
+#greenLeft li {
+    position: relative;
+    z-index: 50;
+    top: 40px;
+    padding-right: 250px;
+    padding-bottom:4px;
+    font-family: 'Varela Round', sans-seri;
+    list-style-type: none;
+    font-size: 15pt;
+}
+
+#icons img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+    padding-right: 120px;
+    right: 600px;
+    bottom: 65px;
+}
+
+#iconstitle div {
+    display: inline-block;
+    z-index: 100;
+    position: relative;
+    bottom: 150px;
+    right: 600px;
+    margin-right: 135px;
+    font-family: 'Varela Round', sans-seri;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+    ul.breadcrumb li {
+        font-family: 'Varela Round', sans-seri;
+        display: inline;
+        font-size: 18px;
+    }
+        ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+.MapTable {
+    position: absolute;
+    width: 1280px;
+    height: 250px;
+}
+
+    .MapTable th {
+        font-family: 'Varela Round', sans-serif;
+        padding-top: 50px;
+        font-size: 15pt;
+    }
+
+    .MapTable td {
+        text-decoration-line:underline;
+        font-family: 'Varela Round', sans-serif;
+        color: black;
+        position: relative;
+        bottom: 45px;
+        right: 100px;
+    }
+h1.homepage {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size:30px;
+    position:relative;
+    right:15px;
+    top:60px;
+    color:black;
+}

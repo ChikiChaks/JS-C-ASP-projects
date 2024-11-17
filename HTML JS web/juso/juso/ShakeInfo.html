@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>JUSO - שייק ירוק</title>
+    <link rel="icon" type="image/png" href="images/ICON2.png" />
+    <meta name="description" content="spesific shake info - green shake, price range and buying options" />
+    <meta name="author" content="Razim & Ofekim" />
+    <meta name="keywords" content="GreenShake,buy,healthy,Drink,cold" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+
+</head>
+
+<body onload="currentSlide(1)">
+    <div id="container">
+        <header>
+            <nav aria-label="main-nav">
+                <ul class="ulnav">
+                    <a href="Index.html">
+                    <li class="li1 logo">JUSO</li></a>
+                    <a href="Shakes.html">
+                    <li class="li1 liPT">
+                        שייקים
+                        <ul>
+                            <li>שייקים טבעוניים</li>
+                            <li>על בסיס מים</li>
+                            <li>על בסיס חלב</li>
+                            <li>מיצים</li>
+                        </ul>
+                    </li></a>
+                    <li class="li1 liPT">
+                        תוכנית ניקוי
+                        <ul>
+                            <li>שאלות נפוצות</li>
+                            <li>מה זה קולד פרס</li>
+                        </ul>
+                    </li>
+                    <a href="about.html">
+                    <li class="li1 liPT">
+                        הכירו אותנו
+                        <ul>
+                            <li>מי אנחנו</li>
+                            <li>שאלות נפוצות</li>
+                        </ul>
+                    </li></a>
+                    <a href="contactUs.html">
+                    <li class="li1 liPT"> צור קשר</li></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="HeaderPhotos3">
+            <h1 class="">שייקים / Our Shakes</h1>
+            <img src="images/ShakesHeader.png" alt="" />
+        </div>
+        <ul class="breadcrumb">
+            <li><a href="Shakes.html">שייקים ></a></li>
+            <li>GREENY</li>
+        </ul>
+        <section class="ShakeInfo">
+            <div class="info_greenShake">GREENY <div> 28 ש"ח</div></div>
+            <div class="info_ingredients">לימון | תרד | נענע  |  חלב שקדים</div>
+            <div class="borderML"></div>
+            <label for="LiquidAmount">
+                <fieldset class="info_amount">
+                    <input type="radio" id="LiquidAmount" name="first" /> 450 מ"ל
+                    <input type="radio" id="LiquidAmount" name="first" /> 1 ליטר
+                </fieldset>
+            </label>
+            <input type="button" class="button3" value="הוסף לסל הקניות" />
+            <div class="greenShake">
+                <img src="images/Bottle2.jpeg" alt="שייק GREENY" />
+            </div>
+        </section>
+        <section id="greenbarSection">
+            <img src="images/GreenBar.jpeg" alt=""/>
+            <h2 id="greenbarH">עוד על GREENY</h2>
+            <h3>הרכב תזונתי ל100 מ"ל</h3>
+            <h3>מתאים ל-</h3>
+
+            <ul id="greenRight">
+                <li>אנרגיה</li>
+                <li>פחמימות</li>
+                <li>חלבון</li>
+                <li>שומן</li>
+            </ul>
+            <ul id="greenLeft">
+                <li>82 קק"ל</li>
+                <li>10 גרם</li>
+                <li>2 גרם</li>
+                <li>4 גרם</li>
+            </ul>
+
+            <section id="icons">
+                <img src="images/BirthIcon.jpeg" alt="מתאים לנשים בהריון" />
+                <img src="images/HeartIcon.jpeg" alt="עוזר לבעיות לב" />
+            </section>
+            <section id="iconstitle">
+                <div>נשים בהריון</div>
+                <div>בעלי בעיות לב</div>
+            </section>
+
+        </section>
+        <section class="Gallery">
+            <h2>מוצרים נוספים</h2>
+            <div class="mySlides">
+                <div class="numbertext">6 / 1</div>
+                <img src="images/WaterBottle.jpeg" style="width:70%"/>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 2</div>
+                <img src="images/Straw.jpeg" style="width:70%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 3</div>
+                <img src="images/Cooler.jpeg" style="width:70%"/>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 4</div>
+                <img src="images/Hat.jpeg" style="width:70%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 5</div>
+                <img src="images/Bag.jpeg" style="width:70%" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/JuiceBottle.jpeg" style="width:70%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/WaterBottle.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Water Bottle">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Straw.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Straws">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Cooler.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Cooler">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Hat.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Cool Hat">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Bag.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Juice Bottle">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/JuiceBottle.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Juice Bottle">
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <table class="FooterTable">
+                <tr>
+                    <th><a href="Shakes.html"> שייקים</a></th>
+                    <th> תוכניות ניקוי </th>
+                    <th><a href="about.html"> הכירו אותנו</a></th>
+                    <th><a href="contactUs.html"> צור קשר </a></th>
+                </tr>
+                <tr>
+
+                    <td><a href="Shakes.html">שייקים טבעוניים </a></td>
+                    <td>שאלות נפוצות </td>
+                    <td>מי אנחנו</td>
+                    <td> רוטשילד 55, תל אביב </td>
+                </tr>
+                <tr>
+
+                    <td><a href="Shakes.html">על בסיס מים</a></td>
+                    <td>מה זה קולד פרס?</td>
+                    <td>שאלות נפוצות</td>
+                    <td>טל - 0545381628</td>
+                </tr>
+                <tr>
+                    <td><a href="Shakes.html">על בסיס חלב</a></td>
+                </tr>
+                <tr>
+                    <td><a href="Shakes.html">מיצים</a></td>
+                </tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th><a href="SiteMap.html">מפת האתר</a></th>
+            </table>
+
+        </footer>
+    </div>
+</body>
+</html>
